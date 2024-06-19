@@ -1,0 +1,75 @@
+:root {
+    --white: #ffff;
+    --darkBlue: #0e041f;
+    --ash: #5e5d61;
+    --purple: #9c1778;
+    --black: black;
+    --var--background: linear-gradient(to bottom, rgb(28, 3, 31), rgba(189, 8, 120, 0.765), rgb(33, 8, 32));  
+}
+
+.signup-container{
+    margin: 100px 0px 100px 200px;
+    width: 400px;
+    height: 470px;
+    background: var(--var--background);
+    border-radius: 20px;
+}
+.signup-container h2{
+    padding: 30px 0px 30px 0px;
+    color: var(--white);
+    text-align: center;
+}
+.signup-container .div1{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    flex-wrap: wrap;
+}
+
+.signup-container input{
+    width: 270px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    text-align: center;
+    border: none;
+}
+
+.signup-container button {
+    margin-left: 35%;
+    width: 90px;
+    background-color: var(--purple);
+    color: var(--white);
+    padding: 5px 5px;
+    border: none;
+    border-radius: 30px;
+    font-size: .9rem;
+    margin-top: 8px;
+    transition: .5s;
+}
+.signup-container button:hover{
+    background-color: var(--white);
+    color: black;
+    cursor: pointer;
+}
+
+
+/* Media Queries for Responsive */
+@media (max-width: 768px) {
+    .signup-container {
+        margin: 50px auto; /* Reduce top and bottom margin on smaller devices */
+        width: 80%; /* Use a higher percentage of the screen width */
+    }
+}
+
+@media (max-width: 480px) {
+    .signup-container {
+        margin: 20px auto; /* Further reduce margin for very small devices */
+        width: 95%; /* Use even more of the screen width */
+    }
+
+    .signup-container button {
+        width: auto; /* Allow the button to expand as needed */
+        padding: 5px 30px; /* Increase padding for a wider button */
+    }
+}

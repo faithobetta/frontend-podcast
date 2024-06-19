@@ -1,0 +1,162 @@
+/* Nav area css  */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,html {
+    overflow-x: hidden;
+    text-rendering: optimizeSpeed;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    overflow-y: scroll;
+  
+}
+
+
+:root {
+    --white: #ffff;
+
+    --darkBlue: #0e041f;
+    --ash: #5e5d61;
+
+    --purple: #9c1778;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+nav {
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+    background-color: var(--darkBlue);
+    color: var(--white);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+nav .logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 2rem;
+}nav .logo .fa-shield-cat {
+    color: var(--purple);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: var(--white);
+    transition: .5s;
+    position: relative;
+}
+.nav-links a:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: var(--white);
+    bottom: -5px;
+    left: 0px;
+    transition: .5s;
+}
+
+
+.nav-links a:hover {
+    color: var(--purple);
+}
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links .fa-xmark {
+    display: none;
+    transition: .5s;
+}
+
+nav .fa-bars {
+    display: none;
+    font-size: 1.5rem;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.nav-links a .nav-login{
+    height: 30px;
+    width: 400px;
+    background-color: var(--darkBlue);
+    color: var(--white);
+} 
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px){
+    nav {
+        padding: 10px 20px;
+    }
+
+    nav .fa-bars {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        height: fit-content;
+        flex-direction: column;
+        padding: 30px;
+        top: 0px;
+        left: 0px;
+        transform: translateX(100%);
+        color: var();
+        background-color: var(--purple);
+        transition: .5s;
+    }
+
+    .nav-links.active {
+        transform: translateX(0%);
+    }
+
+    .nav-links .fa-xmark {
+        display: block;
+        cursor: pointer;
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        font-size: 1.5rem;
+    }
+
+    .nav-links a {
+        width: 100%;
+    }.nav-links a:after {
+        display: none;
+    }
+
+
+}
+

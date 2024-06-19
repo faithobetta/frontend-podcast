@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Listener</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/signup.css">
+
+</head>
+<body>
+    <!-- all about the nav bar starts here -->
+    <nav>
+        <!-- logo -->
+        <div class="logo">
+            <i class="fa-solid fa-shield-cat fa-flip"></i>
+            SoundScape
+        </div>
+        <!-- End Of logo -->
+
+        <!-- nav menu grouped -->
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="shows.html">Shows</a>
+            <a href="hosts.html">Hosts</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a class="nav-login" href="login.html">Login</a>
+            <i class="fa-solid fa-xmark"></i>
+        </div> 
+        <!-- nav menu -->
+
+        <!-- hamburger icon only on smaller screens -->
+        <i class="fa-solid fa-bars"></i>
+        <!-- hamburger icon only on smaller screens -->
+
+    </nav>
+    <!-- all about the nav bar ends  here -->
+    
+    <form action="listener-welcome.html" method="" name="form1">
+        <div class="signup-container">
+            <h2>Sign Up</h2>
+            <div class="div1">
+                <input type="text" class="fname" id="fname" name="fname" placeholder="First Name" onblur="myfirstname()" >
+            </div>
+    
+            <div class="div1">
+                <input type="text" name="lname" id="lname" placeholder="Last Name" onblur="mylastname()">
+            </div>
+
+            <div class="div1">
+                <input onblur="email_check()" type="email" name="email" id="email" placeholder="Email">
+            </div>
+        
+            <div class="div1">
+                <input type="number" name="number" id="number" placeholder="Phone Number" onblur="phone_number()">
+            </div> 
+
+            <div class="div1">
+                <input onblur="val_password()" type="password" name="password" id="password"  placeholder="Password">
+            </div>
+
+            <div class="div1">
+                <input type="text" name="confirmpassword" placeholder="Confirm Password">
+            </div>
+                <button type="submit">Sign Up</button>
+        </div>
+    </form>
+
+    <footer>
+        <section>
+            <div class="footer-logo">
+                <i class="fa-solid fa-shield-cat"></i>
+                SoundScape
+            </div>
+            <p>
+                Stay tuned, stay inspired, and keep the conversations going with SoundScape. Connect, share, and dive deeper into the world of podcasts with us.  
+            </p>
+        </section>
+        <section>
+            <h2 class="footer-section-subheading">
+                Quick Links
+            </h2>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="shows.html">Shows</a>
+                <a href="hosts.html">Hosts</a>
+                <a href="about.html">About Us</a>
+                <a href="login.html">Login</a>
+            </div>
+        </section>
+        <section>
+            <h2 class="footer-section-subheading">
+                Contact Us
+            </h2>
+            <div class="footer-contact">
+                <div class="footer-location contact-space">
+                    <div class="fl-subheading">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Find us:</p>
+                    </div>
+                    <iframe class="gg_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2486.098772821752!2d-0.2468400022055832!3d51.456342923059815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760ee6c0c242eb%3A0x3a5665ce81752bbf!2sUniversity%20of%20Roehampton%20London!5e0!3m2!1sen!2suk!4v1702237981400!5m2!1sen!2suk" width="130" height="80" style="border: 2px solid orangered;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="footer-tel contact-space">
+                    <div class="ft-subheading">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Call us:</p>
+                    </div>
+                    <p class="ft-number">+44-772-181-0275</p>
+                </div>
+                <div class="footer-mail contact-space">
+                    <div class="fm-subheading">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>Email</p>
+                    </div>
+                    <a href="#" class="fm-mail">SoundScape@gmail.com</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 class="footer-section-subheading">
+                Follow us
+            </h2>
+            <div class="socials">
+                <a href="">
+                    <i class="fa-brands fa-facebook fa-bounce"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-twitter fa-beat"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-instagram fa-beat-fade"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-tiktok fa-shake"></i>
+                </a>
+            </div>
+        </section>
+    </footer>
+
+    <!-- after footer license -->
+    <p class="copyright">
+        Copyright © 2023 Cat Care Guide. All Right Reserved.
+    </p>
+    <!-- after footer license -->
+
+    <script src="js/navBar.js"></script>
+</body>
+</html>
